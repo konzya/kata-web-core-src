@@ -1,0 +1,82 @@
+.button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 500ms ease-in-out;
+  background-repeat: no-repeat;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.3);
+    filter: hue-rotate(20deg);
+  }
+
+  &--type--close {
+    background-image: url(../img/burger-close.svg);
+
+    &:hover {
+      transform: scale(1.3) rotate(-180deg);
+    }
+  }
+
+  &--type--search {
+    background-image: url(../img/search.svg);
+  }
+
+  &--type--call {
+    background-image: url(../img/call.svg);
+  }
+
+  &--type--chat {
+    background-image: url(../img/chat.svg);
+  }
+
+  &--type--profile {
+    background-image: url(../img/profile.svg);
+  }
+
+  &--type--burger {
+    background-image: url(../img/burger.svg);
+  }
+
+  &--type--repair {
+    background-image: url(../img/repair.svg);
+  }
+
+  &--type--status {
+    background-image: url(../img/checkstatus.svg);
+  }
+
+  &--type--go {
+    background-image: url(../img/go.svg);
+  }
+
+  &--with-label {
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-radius: 0;
+    text-decoration: none;
+    gap: 8px;
+
+    &:hover {
+      transform: none;
+      filter: none;
+      text-decoration: $text-decoration--hover;
+    }
+  }
+
+  &__label {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $text-color--dark;
+    text-decoration: none;
+  }
+}
