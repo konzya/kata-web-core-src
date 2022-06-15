@@ -1,4 +1,14 @@
-$font-family: 'TT Lakes';
+$dekstop: '1200px';
+$tablet: '768px';
+$font-family: 'TT Lakes', sans-serif;
 $text-color--dark: #1B1C21;
+$text-color--medium: #7E7E82;
+$text-color--light: #B5B6BC;
+$border-color: #EAEAEA;
 $color--corporate: #FF3E79;
+$color--additional: #B8FFEC;
+$color--background: #F8F8F8;
+$color--light: white;
+$inner-swadow: inset 0px -1px 0px 0px $color--additional;
 $text-decoration--hover: solid 2px $color--corporate underline;
+

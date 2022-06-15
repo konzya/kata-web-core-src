@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__svg {
+    overflow: visible;
+  }
+
+  &__svg * {
+    transition: all 1s;
+  }
+
+  &:hover .s1,
+  &:hover .s2 {
+    fill: $color--corporate;
+  }
+
+  &:hover .s1 {
+    transform: translate(10px,-10px);
+  }
+
+  &:hover .s2 {
+    transform: translate(-10px, 10px);
+  }
+
+  &:hover .s3,
+  &:hover .s4 {
+    transform: translate(-10px);
+  }
+
+  &:hover .s8,
+  &:hover .s7 {
+    transform: translate(10px);
+}
+}
